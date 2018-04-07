@@ -24,19 +24,16 @@
   padding: 0;
 }
 .count-enter {
-  background: #f00;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
 .count-enter.count-enter-active {
-  background: #ff0;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 .count-exit {
-  background: #000;
   -webkit-transform: translateY(0);
           transform: translateY(0);
   -webkit-transition: 0.5s;
@@ -45,10 +42,9 @@
   left: 0;
   bottom: 0;
 }
-.count-exit.count-exit-active {
-  background: #008000;
-  -webkit-transform: translateY(-100%) scale(3);
-          transform: translateY(-100%) scale(3);
+.count-exit .count-exit-active {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 @font-face {
   font-family: "haymakerregular";
@@ -640,7 +636,7 @@ input[type=submit].twitter:after {
   max-width: 500px;
   margin: 50px auto;
   padding: 2rem;
-  border: 2px solid #000;
+  border: 2px solid #161621;
 }
 .store-selector input,
 .store-selector button {
